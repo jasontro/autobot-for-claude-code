@@ -1,0 +1,4 @@
+Pillow
+pyautogui
+winocr; sys_platform == "win32"
+pytesseract; sys_platform != "win32"
