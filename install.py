@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Claude Code Auto-Bot — Cross-platform installer
+AutoBot for Claude Code — Cross-platform installer
 Installs Python packages and system dependencies (Tesseract on Mac/Linux).
 """
 
@@ -19,7 +19,7 @@ def main():
     system = platform.system()
     print()
     print("╔══════════════════════════════════════════╗")
-    print("║  Claude Code Auto-Bot — Installer         ║")
+    print("║  AutoBot for Claude Code — Installer       ║")
     print("╚══════════════════════════════════════════╝")
     print()
 

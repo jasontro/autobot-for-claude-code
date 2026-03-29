@@ -1,4 +1,4 @@
-# Claude Code Auto-Bot
+# AutoBot for Claude Code
 
 Auto-approves Claude Code permission prompts so you don't have to manually click "Allow" every time.
 

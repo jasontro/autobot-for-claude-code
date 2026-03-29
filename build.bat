@@ -1,6 +1,6 @@
 @echo off
 echo ============================================
-echo   Building Claude Code Auto-Bot .exe
+echo   Building AutoBot for Claude Code .exe
 echo ============================================
 echo.
 

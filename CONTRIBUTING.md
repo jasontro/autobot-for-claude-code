@@ -1,4 +1,4 @@
-# Contributing to Claude Code Auto-Bot
+# Contributing to AutoBot for Claude Code
 
 Thanks for your interest in contributing!
 

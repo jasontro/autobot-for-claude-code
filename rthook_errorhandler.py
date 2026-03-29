@@ -9,7 +9,7 @@ if sys.platform == 'win32':
             import ctypes
             msg = f"{exc_type.__name__}: {exc_value}"
             ctypes.windll.user32.MessageBoxW(
-                0, msg, "Claude Code Auto-Bot - Error", 0x10
+                0, msg, "AutoBot for Claude Code - Error", 0x10
             )
         except Exception:
             pass

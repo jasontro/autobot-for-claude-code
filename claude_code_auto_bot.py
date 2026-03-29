@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Claude Code Auto-Bot v1.0
-━━━━━━━━━━━━━━━━━━━━━━━━━
+AutoBot for Claude Code v1.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Monitors a screen region for Claude Code permission prompts and
 auto-approves by clicking + pressing a configurable key.
 
@@ -203,7 +203,7 @@ PALETTES["CLAUDE"] = {
 
 THEME_ORDER = list(THEMES.keys()) + ["OBSIDIAN", "GHOST", "CLAUDE"]
 
-THEME_FILE = Path.home() / ".claude_autobot_theme"
+THEME_FILE = Path.home() / ".autobot_theme"
 
 def _load_saved_theme():
     try:
@@ -315,13 +315,13 @@ class ClaudeAutoBot:
             try:
                 import ctypes
                 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
-                    "claude.codeautobot.v1"
+                    "autobot.forclaudecode.v1"
                 )
             except Exception:
                 pass
 
         self.root = tk.Tk()
-        self.root.title("⟐ CLAUDE CODE AUTO-BOT")
+        self.root.title("⟐ AUTOBOT FOR CLAUDE CODE")
         self.root.configure(bg=C["bg"])
         self.root.minsize(520, 420)
         self.root.geometry("600x460+80+80")
@@ -384,7 +384,7 @@ class ClaudeAutoBot:
                                   fg=C["accent"], bg=C["panel"])
         self.pulse_dot.pack(side="left", padx=(0, 8))
 
-        self._title_label = tk.Label(self._title_frame, text="CLAUDE CODE AUTO-BOT",
+        self._title_label = tk.Label(self._title_frame, text="AUTOBOT FOR CLAUDE CODE",
                                      font=(MONO_FONT, 13, "bold"),
                                      fg=C["accent"], bg=C["panel"])
         self._title_label.pack(side="left")
@@ -1147,12 +1147,12 @@ if __name__ == "__main__":
     try:
         print("""
     \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557
-    \u2551   \u2b21  CLAUDE CODE AUTO-BOT v1.0               \u2551
+    \u2551   \u2b21  AUTOBOT FOR CLAUDE CODE v1.0             \u2551
     \u2551   Auto-approves Claude Code prompts           \u2551
     \u2551   Install:  pip install -r requirements.txt   \u2551
     \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d
     """)
     except UnicodeEncodeError:
-        print("\n    CLAUDE CODE AUTO-BOT v1.0\n")
+        print("\n    AUTOBOT FOR CLAUDE CODE v1.0\n")
     app = ClaudeAutoBot()
     app.run()

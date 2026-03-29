@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "============================================"
-echo "  Building Claude Code Auto-Bot .app"
+echo "  Building AutoBot for Claude Code .app"
 echo "============================================"
 echo
 
