@@ -1144,12 +1144,15 @@ class ClaudeAutoBot:
 
 
 if __name__ == "__main__":
-    print("""
-    ╔═══════════════════════════════════════════════╗
-    ║   ⬡  CLAUDE CODE AUTO-BOT v1.0               ║
-    ║   Auto-approves Claude Code prompts           ║
-    ║   Install:  pip install -r requirements.txt   ║
-    ╚═══════════════════════════════════════════════╝
+    try:
+        print("""
+    \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557
+    \u2551   \u2b21  CLAUDE CODE AUTO-BOT v1.0               \u2551
+    \u2551   Auto-approves Claude Code prompts           \u2551
+    \u2551   Install:  pip install -r requirements.txt   \u2551
+    \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d
     """)
+    except UnicodeEncodeError:
+        print("\n    CLAUDE CODE AUTO-BOT v1.0\n")
     app = ClaudeAutoBot()
     app.run()
